@@ -20,6 +20,7 @@ body section .row {
   margin: 10px 0;
   perspective: 1200px;
   background-color:#212121;
+  border:1px solid #212121;
 }
 .card:hover .cover {
   transform: rotateX(0deg) rotateY(-180deg);
@@ -74,7 +75,7 @@ body section .row {
   transition: ease all 1.3s;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.card .cover.item-a {
+/* .card .cover.item-a {
   background-image: url("https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?auto=format&fit=crop&w=600&q=80");
 }
 .card .cover.item-b {
@@ -82,7 +83,7 @@ body section .row {
 }
 .card .cover.item-c {
   background-image: url("https://images.unsplash.com/photo-1525945518069-b924046d1385?auto=format&fit=crop&w=600&q=80");
-}
+} */
 .card .cover h1 {
   font-weight: 600;
   position: absolute;
