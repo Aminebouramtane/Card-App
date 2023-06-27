@@ -89,7 +89,7 @@ body section .row {
   position: absolute;
   bottom: 55px;
   left: 50px;
-  color: rgb(207, 93, 93);
+  color: rgb(233, 231, 231);
   transform-style: preserve-3d;
   transition: ease all 2.3s;
   z-index: 3;
@@ -101,7 +101,7 @@ body section .row {
   position: absolute;
   top: 55px;
   right: 50px;
-  color: rgb(207, 93, 93);
+  color: rgb(233, 231, 231);
   transform-style: preserve-3d;
   transition: ease all 2.3s;
   z-index: 4;
