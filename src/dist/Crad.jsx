@@ -9,7 +9,7 @@ const Crad = (props) => {
 			<div className="row">
 				{props.products && props.products.map((product)=>{
 					return (
-						<div className="col-md-4 col-sm-6 col-xs-12">
+						<div className="col-md-4 col-sm-6 col-xs-12">npm ss
 							<div className="card" >
 								<div className="cover item-a" style={{backgroundImage:`url(${product.image})`}}>
 									<h1>{product.title.slice(0,17)}</h1>
