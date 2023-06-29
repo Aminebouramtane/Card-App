@@ -138,3 +138,11 @@ body section .row {
   background-color: #fddb3a;
   color: #0b0f08;
 }
+button{
+  background-color: transparent;
+  border: transparent;
+  color:  #fddb3a;
+}
+button:hover {
+  color: #0b0f08;
+}

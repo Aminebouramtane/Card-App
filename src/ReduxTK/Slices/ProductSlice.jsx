@@ -12,6 +12,7 @@ const productSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(fetchData.fulfilled, (state, action) => {
+      // state.push(action.payload)
       return action.payload;
     });
   },

@@ -7,12 +7,14 @@ import Navbar from './layouts/Navbar';
 function App() {
 
   const[products,setProducts] = useState();
-  const data = useSelector(state=>state.products)
+  // const data = useSelector(state=>state.products)
+  // console.log(data);
   const dispatch = useDispatch()
+
 
   useEffect(()=>{
     dispatch(fetchData()).then((response) => {
-      setProducts(response.payload); // Log the fetched data
+      setProducts(response.payload);
     })
     .catch((error) => {
       console.error('Error fetching data:', error);
