@@ -1,16 +1,15 @@
 import React from 'react'
 import "./style.css"
 import { useDispatch } from 'react-redux'
+import {AddToCard} from '../ReduxTK/Slices/CradSlice'
 
 
 const Crad = (props) => {
 	// console.log(props.products);
 	const dispatch = useDispatch()
-	const AddToCard = ()=>{
-		dispatch(
-			AddCrad
-		)
-	}
+	const handleAddToCart = (product) => {
+		dispatch(AddToCard(product));
+	  };
 
   return (
     <>
@@ -24,7 +23,7 @@ const Crad = (props) => {
 									<h1>{product.title.slice(0,17)}</h1>
 									<span className="price">${product.price}</span>
 									<div className="card-back">
-										<a href="#"><button onClick={AddToCard(product)}>Add to cart</button></a>
+										<a href="#"><button onClick={handleAddToCart(product)}>Add to cart</button></a>
 										<a href="#">View detail</a>
 									</div>
 								</div>

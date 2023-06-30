@@ -4,13 +4,13 @@ import { createSlice } from "@reduxjs/toolkit";
 const AddCard = createSlice(
     {
         name:"AddSlice",
-        initialState,
+        initialState:[],
         reducers:{
-            AddToCard : ()=>{
-                
+            AddToCard : (state, action)=>{
+                return [action.payload]
             }
         }
     }
 )
-
-export default AddCard
+export const {AddToCard} = AddCard.actions
+export default AddCard.reducer
